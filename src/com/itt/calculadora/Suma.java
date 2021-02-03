@@ -61,12 +61,16 @@ package com.itt.calculadora;
  *<h2>Casos especiales:</h2>
  *<ol>
  *	<li><p>Utilizaci&oacuten de n&uacutemeros negativos no permitidos:</p>
- * 		Si uno de los n&uacutemeros pasados es negativo se lanzara una excepci&oacuten
- *		ya que realiza operaciones b&aacutesicas de suma de n&uacutemeros positivos.
+ * 		Si uno de los n&uacutemeros pasados es negativo se lanzar&aacute un aviso de que no est&aacute
+ * 		permitido su uso, no realizando la operaci&oacute.
  * 	</li>
  * 	<li><p>Usar caracteres en vez de n&uacutemeros:
- * 		Si en vez de n&uacutemeros como argumentos se pasan caracteres, se lanzar&aacute
- * 		una excepci&oacuten ya que lo &uacutenico que est&aacuten permitidos son n&uacutemeros.
+ * 		Si en vez de n&uacutemeros como argumentos se quiere pasar caracteres, puede suceder:<br> 
+ * &nbsp&nbsp&nbsp- Por linea de comandos: el tipo de variable definido ya impide que se pasen caracteres<br>
+ * &nbsp&nbsp&nbsp dando un error en tiempo de compilación.
+ * &nbsp&nbsp&nbsp- Por consola mediante la clase Scanner: Al implementar la clase Scanner se puede controlar<br>
+ * &nbsp&nbsp&nbsp que el usuario no pase nig&uacuten car&aacutecter controlandolo por condionales o usando la <br>
+ * &nbsp&nbsp&nbsp InputMismatchException de la clase java.util.
  * 	</li>
  *</ol>
  *
@@ -93,17 +97,14 @@ public class Suma {
 	 * 		Sumando que recibe un n&uacutemero real
 	 * @return
 	 * 		Un n&uacutemero real que es el resultado de la suma de num1 + num2.
-	 * @exception
-	 * 		IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero se pasa un car&aacutecter lanzar&aacute una excepci&oacuten
-	 * 		indicando el error
-	 * @exception
-	 * 		IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero negativo lanzar&aacute una excepci&oacuten
-	 * 		indicando el error
+	 * 
+	 * Si uno de los valores es negativo no se realiar&aacute la operaci&oacuten, devolviendo 0.00;
 	 */
 	public static double sumReales(double num1, double num2) {
-		
+		if((num1<0 || num2 <0)) {
+			return 0.00;
+		}
 		return num1+num2;
-		
 	}
 	
 	/**
@@ -115,17 +116,14 @@ public class Suma {
 	 * 		Sumando que recibe un n&uacutemero entero
 	 * @return
 	 * 		El resultado de la suma de num1 y num2.
-	 * @exception
-	 * 		IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero se pasa un car&aacutecter lanzar&aacute una excepci&oacuten
-	 * 		indicando el error
-	 * @exception
-	 * 		IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero negativo lanzar&aacute una excepci&oacuten
-	 * 		indicando el error
+	 * 
+	 * Si uno de los valores es negativo no se realiar&aacute la operaci&oacuten, devolviendo 0;
 	 */
 	public static int sumEntero(int num1, int num2) {
-		 
-		return  num1+num2;
-		
+		if(num1<0 || num2 <0) {
+			return 0;
+		}
+		return num1+num2;
 	}
 	
 	/**
@@ -138,17 +136,14 @@ public class Suma {
 	 * 		Sumando que recibe un n&uacutemero real
 	 * @return
 	 * 		Un n&uacutemero real que es el resultado de la suma de num1, num2 y num3
-	 * @exception
-	 * 		IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero se pasa un car&aacutecter lanzar&aacute una excepci&oacuten
-	 * 		indicando el error
-	 * @exception
-	 * 		IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero negativo lanzar&aacute una excepci&oacuten
-	 * 		indicando el error
+	 * 
+	 * Si uno de los valores es negativo no se realiar&aacute la operaci&oacuten, devolviendo 0.00;
 	 */
 	public static double sumTresReales(double num1, double num2, double num3) {
-				
+		if(num1<0 || num2 <0 || num3<0) {
+			return 0.00;
+		}
 		return num1+num2+num3;
-		
 	}
 	
 	/**
@@ -158,19 +153,18 @@ public class Suma {
 	 * {@link #getAcum()}
 	 * @param num
 	 * 		N&uacutemero de tipo real 
-	 * @exception
-	 * 		IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero se pasa un car&aacutecter lanzar&aacute una excepci&oacuten
-	 * 		indicando el error
-	 * @exception
-	 * 		IOException Si el n&uacutemero pasado como argumento es negativo lanzar&aacute una excepci&oacuten
-	 * 		indicando el error
+	 * 
+	 * Si uno de los valores es negativo no se realiar&aacute la operaci&oacuten.<br>
+	 * Se mostrar&aacute un aviso de que el n&uacutemero no ha sido tenido en cuenta.
 	 */
 	
-	//Esto es un comentario con acentos en la ó
 	public static void sumAcumulado(double num) {
-
-		//TODO Aqu&iacute el c&oacutedigo que tiene que ir acumulando la suma.
-		
+		if(num < 0) {
+			System.out.println("El número introducido no se tiene en cuenta");
+			System.out.println("Por favor introduce un número mayor que 0");
+		}else {
+			acum = acum + num;
+		}
 	}
 	/**
 	 * M&eacutetodo est&aacutetico que no recibe par&aacutemetros y devuelve el valor acumulado de la suma.
@@ -179,8 +173,6 @@ public class Suma {
 	 * 		{@link #sumAcumulado(double)}
 	 */
 	public static double getAcum() {
-		
 		return acum;
 	}
-	
 }
