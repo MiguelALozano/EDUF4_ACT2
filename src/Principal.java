@@ -21,6 +21,31 @@ public class Principal {
 		// Zona para División
 		
 		// Zona para Producto
+		System.out.println("Operacion valida de 2 numeros reales:");
+		System.out.println("4.5 x 2 = " + Producto.prodReales(4.5, 2));
+		System.out.println("=======================");
+		System.out.println("Operacion no valida de 2 numeros reales:");
+		System.out.println(Producto.prodReales(4.5, -2));
+		System.out.println("=======================");
+		System.out.println("Operacion valida de 2 numeros enteros:");
+		System.out.println("20 x 4 = " + Producto.prodEnteros(20, 4));
+		System.out.println("=======================");
+		System.out.println("Operacion no valida de 2 numeros enteros:");
+		System.out.println(Producto.prodEnteros(20, -4));
+		System.out.println("=======================");
+		System.out.println("Operacion valida de 3 numeros reales:");
+		System.out.println("4.3 * 7.2 * 2 = " + Producto.prodReales(4.3, 7.2, 2));
+		System.out.println("=======================");
+		System.out.println("Operacion no valida de 3 numeros reales:");
+		System.out.println(Producto.prodReales(4.3, -7.2, 2));
+		System.out.println("=======================");
+		System.out.println("Operacion valida de potencia:");
+		System.out.println("4^7 = " + Producto.potencia(4, 7));
+		System.out.println("=======================");
+		System.out.println("Operacion no valida de potencia:");
+		System.out.println("0^0 = " + Producto.potencia(0, 0));
+		System.out.println("=======================");
+		
 		
 		// Zona para Resta
 		
