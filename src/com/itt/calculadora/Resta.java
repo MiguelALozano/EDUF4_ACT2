@@ -64,8 +64,8 @@ package com.itt.calculadora;
  *		ya que realiza operaciones b&aacutesicas de resta de n&uacutemeros positivos.
  * 	</li>
  * 	<li><p>Usar caracteres en vez de n&uacutemeros:</p>
- * 		Si en vez de n&uacutemeros como argumentos se pasan caracteres, se lanzar&aacute
- * 		una excepci&oacuten ya que lo &uacutenico que est&aacute permitido son n&uacutemeros.
+ * 		La clase Resta solo permite el paso de numeros como argumentos a sus funciones, debe controlarse 
+ * 		adecuadamente que el usuario solo pase ese tipo de argumentos al llamar a las distintas funciones.
  * 	</li>
  *</ol>
  *
@@ -92,10 +92,10 @@ public class Resta {
 	 * @param num1 este es el minuendo de la resta
 	 * @param num2 este es el sustraendo de la resta
 	 * @return devuelve la resta de num1 menos num2
-	 * @exception IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero se pasa un car&aacutecter 
-	 * lanzar&aacute una excepci&oacuten indicando el error 
-	 * @exception IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero se pasa un n&uacutemero negativo 
-	 * lanzar&aacute una excepci&oacuten indicando el error
+	 * Si alguno de los argumentos pasados a la funcion es un numero negativo se mostrara un mensaje
+	 * indicando que solo se pueden realizar operaciones con numeros positivos.
+	 * Igualmente el valor retornado por la funcion sera 0 en caso de introducir algun numero negativo
+	 * como argumento.
 	 */
 	public static double resReales(double num1, double num2) {
 
@@ -109,9 +109,10 @@ public class Resta {
 	 * @param num2 este es el sustraendo de la resta
 	 * @return devuelve la resta de num1 menos num2
 	 * @exception IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero se pasa un car&aacutecter 
-	 * lanzar&aacute una excepci&oacuten indicando el error 
-	 * @exception IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero se pasa un n&uacutemero negativo 
-	 * lanzar&aacute una excepci&oacuten indicando el error
+	 * Si alguno de los argumentos pasados a la funcion es un numero negativo se mostrara un mensaje
+	 * indicando que solo se pueden realizar operaciones con numeros positivos.
+	 * Igualmente el valor retornado por la funcion sera 0 en caso de introducir algun numero negativo
+	 * como argumento.
 	 */
 	public static int resEnteros(int num1, int num2) {
 
@@ -126,10 +127,10 @@ public class Resta {
 	 * @param num2 este es el primer sustraendo de la resta
 	 * @param num3 este es el segundo sustraendo de la resta
 	 * @return devuelve el resultado de la resta de (num1 menos num2) menos num3
-	 * @exception IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero se pasa un car&aacutecter 
-	 * lanzar&aacute una excepci&oacuten indicando el error 
-	 * @exception IOException Si en uno de los par&aacutemetros en vez de un n&uacutemero se pasa un n&uacutemero negativo 
-	 * lanzar&aacute una excepci&oacuten indicando el error
+	 * Si alguno de los argumentos pasados a la funcion es un numero negativo se mostrara un mensaje
+	 * indicando que solo se pueden realizar operaciones con numeros positivos.
+	 * Igualmente el valor retornado por la funcion sera 0 en caso de introducir algun numero negativo
+	 * como argumento.
 	 */
 	public static double resTresReales(double num1, double num2, double num3) {
 
