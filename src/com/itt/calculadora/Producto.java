@@ -154,8 +154,8 @@ public class Producto {
 	 * indicando que ambos argumentos no pueden ser igual a 0.
 	 * Adicionalmente, el valor de retorno en dicho caso sera 0.
 	 * <br>
-	 * Si los argumentos pasados provocasen un desbordamiento, se retornara el valor
-	 * maximo que puede recoger un Integer y se indicara al usuario el desbordamiento.
+	 * Si los argumentos pasados provocasen un desbordamiento, se indicara al usuario
+	 * el desbordamiento y se retornara 0.
 	 * <p>
 	 * <b>Casos especiales:</b>
 	 * <br>
