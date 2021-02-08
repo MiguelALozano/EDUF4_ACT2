@@ -45,8 +45,8 @@ public class Principal {
 		System.out.println("Operacion no valida de potencia:");
 		System.out.println("0^0 = " + Producto.potencia(0, 0));
 		System.out.println("=======================");
-		
-		
+		System.out.println("1000^1000 = " + Producto.potencia(1000, 1000));
+		System.out.println("1000^1000 = " + Producto.potencia(40, 4));
 		// Zona para Resta
 		
 		// Zona para Suma
