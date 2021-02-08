@@ -48,7 +48,33 @@ public class Principal {
 		
 		
 		// Zona para Resta
-		
+		System.out.println("***************** RESTA *****************");
+		System.out.println("Operacion valida de 2 numeros reales:");
+		System.out.println("4.5 - 2 = " + Resta.resReales(4.5, 2));
+		//guardo el valor de la resta anterior para llevar un acumulado de resultados
+		Resta.resAcumulado(Resta.resReales(4.5, 2)); 
+		System.out.println("=======================");
+		System.out.println("Operacion no valida de 2 numeros reales:");
+		System.out.println("4.5 - (-2) = " + Resta.resReales(4.5, -2));
+		System.out.println("=======================");
+		System.out.println("Operacion valida de 2 numeros enteros:");
+		System.out.println("20 - 4 = " + Resta.resEnteros(20, 4));
+		//guardo el valor de la resta anterior para llevar un acumulado de resultados
+		Resta.resAcumulado(Resta.resEnteros(20, 4));
+		System.out.println("=======================");
+		System.out.println("Operacion no valida de 2 numeros enteros:");
+		System.out.println("20 - (-4) = " + Resta.resEnteros(20, -4)); 
+		System.out.println("=======================");
+		System.out.println("Operacion valida de 3 numeros reales:");
+		System.out.println("4.3 - 7.2 - 2 = " + Resta.resTresReales(4.3, 7.2, 2));
+		//guardo el valor de la resta anterior para llevar un acumulado de resultados
+				Resta.resAcumulado(Resta.resTresReales(4.3, 7.2, 2));
+		System.out.println("=======================");
+		System.out.println("Operacion no valida de 3 numeros reales:");
+		System.out.println("4.3- (-7.2) - 2 = " + Resta.resTresReales(4.3, -7.2, 2));
+		System.out.println("=======================");
+		System.out.println("Valor acumulado de las restas: " +Resta.getAcum());
+		System.out.println("=======================");
 		// Zona para Suma
 		//Suma de dos reales:
 		double a = 8.75;
