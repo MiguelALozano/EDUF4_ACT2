@@ -98,7 +98,11 @@ public class Resta {
 	 * como argumento.
 	 */
 	public static double resReales(double num1, double num2) {
-
+		if (num1 <0 || num2<0) {
+			System.out.println("Sólo se pueden realizar operaciones con números positivos");
+			System.out.println("El valor devuelto en este caso por la función será 0");
+			return 0;
+		}
 		return (num1 - num2);
 	}
 
@@ -115,7 +119,11 @@ public class Resta {
 	 * como argumento.
 	 */
 	public static int resEnteros(int num1, int num2) {
-
+		if (num1 <0 || num2<0) {
+			System.out.println("Sólo se pueden realizar operaciones con números positivos");
+			System.out.println("El valor devuelto en este caso por la función será 0");
+			return 0;
+		}
 		return (num1 - num2);
 
 	}
@@ -133,7 +141,11 @@ public class Resta {
 	 * como argumento.
 	 */
 	public static double resTresReales(double num1, double num2, double num3) {
-
+		if (num1 <0 || num2<0 || num3<0) {
+			System.out.println("Sólo se pueden realizar operaciones con números positivos");
+			System.out.println("El valor devuelto en este caso por la función será 0");
+			return 0;
+		}
 		return (num1 - num2 - num3);
 	}
 
