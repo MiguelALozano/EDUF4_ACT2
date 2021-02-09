@@ -74,9 +74,9 @@ package com.itt.calculadora;
  * 	</li>
  *</ol>
  *
- * @version 1.0
- * @since 20/01/2021
- * @author jass
+ * @version 1.1
+ * @since 09/02/2021
+ * @author Jose A. Santos
  */
 public class Suma {
 	/**

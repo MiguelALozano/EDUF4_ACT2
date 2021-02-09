@@ -100,19 +100,8 @@ public class Principal {
 		System.out.println("=======================");
 		System.out.println("Valor acumulado de las restas: " +Resta.getAcum());
 		System.out.println("=======================");
-<<<<<<< HEAD
 
-		// Zona para Suma
-		System.out.println("\n***************** SUMA *****************");		
-		//Suma de dos reales:
-		double a = 8.75;
-		double b = 11.87;
-		double c = 8.45;
-		double d = -11.75;
-=======
->>>>>>> jass
-		
-		// Zona para Suma
+		// Zona para Suma	
 		System.out.println("***************** SUMA *****************");
 		System.out.println("Operacion valida de 2 numeros reales:");
 		System.out.println("8.75 + 11.87 = " + Suma.sumReales(8.75, 11.87));
@@ -140,8 +129,6 @@ public class Principal {
 		System.out.println("=======================");
 		System.out.println("Valor acumulado de las sumas: " +Suma.getAcum());
 		System.out.println("=======================");
-		
-		
 	}
 
 }
