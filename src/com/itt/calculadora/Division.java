@@ -2,13 +2,13 @@ package com.itt.calculadora;
 
 
 /**
- * <p>Clase estática que realiza las operaciones básicas de división en una calculadora: <br>
- * &nbsp&nbsp- división de dos números reales <br>
- * &nbsp&nbsp- división de dos númeos enteros <br>
- * &nbsp&nbsp- inverso de un número real<br>
- * &nbsp&nbsp- raíz de un número<br>
- * No est&aacute permitido usar números negativos en la división. Su uso inducirá a un error
- * en la aplicación</p>
+ * <p>Clase estatica que realiza las operaciones basicas de division en una calculadora: <br>
+ * &nbsp&nbsp- division de dos numeros reales <br>
+ * &nbsp&nbsp- division de dos numeos enteros <br>
+ * &nbsp&nbsp- inverso de un numero real<br>
+ * &nbsp&nbsp- raiz de un numero<br>
+ * No est&aacute permitido usar numeros negativos en la division. Su uso inducira a un error
+ * en la aplicacion</p>
  * <hr/>
  * <h3>Metodos que implementa:</h3>
  * <p>
@@ -16,35 +16,35 @@ package com.itt.calculadora;
  * 			<li><h3><em>{@link #Division()}:</em></h3>
  * 				<ul>
  * 					<li> 
- * 						Constructor por defecto que no recibe ningún parámetro.
+ * 						Constructor por defecto que no recibe ningun parametro.
  * 					</li>
  * 				</ul>
  * 			</li>
  * 			<li><h3><em>{@link #divReales(double, double)}:</em></h3>
  * 				<ul>
  * 					<li> 
- * 						Método para dividir dos números reales.
+ * 						Metodo para dividir dos numeros reales.
  * 					</li>
  * 				</ul>
  * 			</li>
  * 			<li><h3><em>{@link #divEnteros(int, int)}:</em></h3>
  * 				<ul>
  * 					<li>
- * 						Método para dividir dos números enteros.
+ * 						Metodo para dividir dos numeros enteros.
  * 					</li>
  * 				</ul>
  * 			</li>
  * 			<li><h3><em>{@link #inverso(int)}:</em></h3>
  * 				<ul>
  * 					<li>
- * 						Método para calcular el inverso de un número.
+ * 						Metodo para calcular el inverso de un numero.
  * 					</li>
  * 				</ul>
  * 			</li>
  * 			<li><h3><em>{@link #raiz(double)}:</em></h3>
  * 				<ul>
  * 					<li>
- * 						Método para calcular la raíz cuadrada de un número.
+ * 						Metodo para calcular la raiz cuadrada de un numero.
  * 					</li>
  * 				</ul>
  * 			</li>
@@ -53,13 +53,13 @@ package com.itt.calculadora;
  *<hr/>
  *<h2>Casos especiales:</h2>
  *<ol>
- *	<li><p>Utilización de números negativos no permitidos:</p>
- * 		Si uno de los números pasados es negativo se lanzara una excepción
- *		ya que realiza operaciones básicas de suma de números positivos.
+ *	<li><p>Utilizacion de numeros negativos no permitidos:</p>
+ * 		Si uno de los numeros pasados es negativo se lanzara una excepcion
+ *		ya que realiza operaciones basicas de suma de numeros positivos.
  * 	</li>
- * 	<li><p>Usar caracteres en vez de números:</p>
- * 		Si en vez de números como argumentos se pasan caracteres, se lanzará
- * 		una excepción, ya que lo único que están permitidos son números.
+ * 	<li><p>Usar caracteres en vez de numeros:</p>
+ * 		Si en vez de numeros como argumentos se pasan caracteres, se lanzara
+ * 		una excepcion, ya que lo unico que estan permitidos son numeros.
  * 	</li>
  *</ol>
  *
@@ -72,101 +72,94 @@ package com.itt.calculadora;
 public class Division {
 	
 	/**
-	 * Constructor por defecto que no recibe ningún parámetro.
+	 * Constructor por defecto que no recibe ningun parametro.
 	 */
 	public Division() {
 		
 	}
 	
 	/**
-	  * Método para dividir dos números reales.
+	  * Metodo para dividir dos numeros reales.
 	  * @param num1
-	  * 		Recoge el primer número real, que será el dividendo de la división.
+	  * 		Recoge el primer numero real, que sera el dividendo de la division.
 	  * @param num2
-	  * 		Recoge el segundo número real, que será el divisor de la división,
-	  * 		este número deberá ser <b>distinto de cero</b>. 
+	  * 		Recoge el segundo numero real, que sera el divisor de la division,
+	  * 		este numero debera ser <b>distinto de cero</b>. 
 	  * @return
-	  * 		Nos devuelve (retorna) el resultado de la división entre los dos números.
-	  * @exception
-	  * 		IOException Si en uno de los parámetros en vez de un número se introduce un carácter, lanzará una excepción
-	  * 		indicando el error
-	  * @exception
-	  * 		IOException Si en el segundo parámetros se introduce un cero, lanzará una excepción
-	  * 		indicando el error.
-	  * @exception
-	  * 		IOException Comprobar que se realiza una división de números naturales, diferentes de cero. De no ser así
-	  * 		lanzará una excepción indicando el error.
+	  * 		Nos devuelve (retorna) el resultado de la division entre los dos numeros.
 	  */
 	
 	public static double divReales(double num1, double num2) {
 		
-		return (num1/num2);
-		 
+		if(num1 < 0 || num2 < 0) {
+			System.out.println("La calculadora solo admite numeros positivos.");
+			return 0.00;
+		} else if (num2 == 0){
+			System.out.println("El divisor debe ser distinto de 0");
+			return 0.00;
+		} else {
+			return num1 / num2;
+		}		 
 	}
 	
 	/**
-	  * Método para dividir dos números enteros.
+	  * Metodo para dividir dos numeros enteros.
 	  * @param num1
-	  * 		Recoge el primer número entero, que será el dividendo de la división.
+	  * 		Recoge el primer numero entero, que sera el dividendo de la division.
 	  * @param num2
-	  * 		Recoge el segundo número entero, que será el divisor de la división,
-	  * 		este número deberá ser <b>distinto de cero</b>. 
+	  * 		Recoge el segundo numero entero, que sera el divisor de la division,
+	  * 		este numero debera ser <b>distinto de cero</b>. 
 	  * @return
-	  * 		Nos devuelve el resultado de la división entre los dos números, siendo el valor devuelto un número real.
-	  * @exception
-	  * 		IOException Si en uno de los parámetros en vez de un número se introduce un carácter, lanzará una excepción
-	  * 		indicando el error
-	  * @exception
-	  * 		IOException Si en el segundo parámetros se introduce un cero, lanzará una excepción
-	  * 		indicando el error.
-	  * @exception
-	  * 		IOException Comprobar que se realiza una división de números naturales, diferentes de cero. De no ser así
-	  * 		lanzará una excepción indicando el error.
+	  * 		Nos devuelve el resultado de la division entre los dos numeros, siendo el valor devuelto un numero real.
 	  */	
 	
 	public static double divEnteros(int num1, int num2) {
 		
-		return num1/num2;
+		if(num1 < 0 || num2 < 0) {
+			System.out.println("La calculadora solo admite numeros positivos.");
+			return 0.00;
+		} else if (num2 == 0){
+			System.out.println("El divisor no puede ser 0");
+			return 0.00;
+		} else {
+			return (double) num1 / num2;
+		}		 
+		
 	}
 		
 	/**
-	  * inversoMétodo para calcular el inverso de un número.
+	  * Metodo para calcular el inverso de un numero.
 	  * @param num
-	  * 		Recoge el número del cual queremos calcular su inverso.
+	  * 		Recoge el numero del cual queremos calcular su inverso.
 	  * @return
-	  * 		Nos devuelve el resultado de la operación.
-	  * @exception
-	  * 		IOException Si el parámetro en vez de un número se introduce un carácter, lanzará una excepción
-	  * 		indicando el error
-	  * @exception
-	  * 		IOException Si el parámetro que se introduce es cero, lanzará una excepción
-	  * 		indicando el error.
-	  *  @exception
-	  * 		IOException Si el número pasado es negativo se lanzara una excepción
-	  *			ya que realiza operaciones básicas de suma de números positivos.
+	  * 		Nos devuelve el resultado de la operacion.
 	  */	
-	public static double inverso(int num) {
+	public static double inverso(double num) {
 		
 		return 1/num;
 	}
 	
 	/**
-	  * Método para calcular la raíz cuadrada de un número.
+	  * Metodo para calcular la raiz cuadrada de un numero.
 	  * @param num
-	  * 		Recoge el número del cual queremos calcular su raíz.
+	  * 		Recoge el numero del cual queremos calcular su raiz.
 	  * @return
-	  * 		Nos devuelve la raíz cuadrada de num.<br>
-	  * 		Si el parámetro que se introduce es menor o igual cero, nos devuelve cero
-	  * @exception
-	  * 		IOException Si el parámetro en vez de un número se introduce un carácter, lanzará una excepción
-	  * 		indicando el error
-	  * @exception
-	  * 		IOException Si el parámetro que se introduce es menor o igual cero, lanzará una excepción
-	  * 		indicando el error.
+	  * 		Nos devuelve la raiz cuadrada de num.<br>
+	  * 		Si el parametro que se introduce es menor o igual cero, nos devuelve cero
 	  */
 	public static double raiz(double num) {
+		
+		if(num < 0) {
+			System.out.println("La calculadora solo admite numeros positivos.");
+			return 0.00;
+		} else if (num == 0){
+			System.out.println("El divisor no puede ser 0");
+			return 0.00;
+		} else {
+			return (Math.sqrt(num));
+		}
 	
-		return (Math.sqrt(num));
+		
 	}
 	
 
