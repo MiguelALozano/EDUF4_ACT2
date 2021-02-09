@@ -7,8 +7,8 @@ import com.itt.calculadora.*;
  * Clase principal donde se ponen a prueba los metodos creados de las clases<br>
  * Divisi&oacuten, Producto, Reesta y Suma.
  * 
- * @author Jose A. Santos, &Aacutelvaro Quiles, Miguel A. Lozano, Ra&uacutel Ru&iacutez
- * @version 1.0
+ * @author Jose A. Santos, Alvaro Quiles, Miguel A. Lozano, Raul Ruiz
+ * @version 1.1
  * @since 04/02/2021
  */
 public class Principal {
@@ -16,7 +16,6 @@ public class Principal {
 	
 	public static void main(String[] args) {
 		
-		double result;
 		
 		// Zona para División
 		
