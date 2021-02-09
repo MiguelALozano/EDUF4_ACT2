@@ -1,15 +1,15 @@
 package com.itt.calculadora;
 
 /**
- * <p>Clase est&aacutetica que realiza las operaciones b&aacutesicas de multiplicaci&oacuten en una calculadora: <br>
- * &nbsp&nbsp- Producto de dos n&uacutemeros reales<br>
- * &nbsp&nbsp- Producto de dos n&uacutemeros enteros<br>
- * &nbsp&nbsp- Producto de tres n&uacutemeros reales<br>
+ * <p>Clase estatica que realiza las operaciones basicas de multiplicacion en una calculadora: <br>
+ * &nbsp&nbsp- Producto de dos numeros reales<br>
+ * &nbsp&nbsp- Producto de dos numeros enteros<br>
+ * &nbsp&nbsp- Producto de tres numeros reales<br>
  * &nbsp&nbsp- Potencia<br>
- * No est&aacute permitido usar n&uacutemeros negativos en la multiplicaci&oacuten. Su uso inducir&aacute a un error
- * en la aplicaci&oacuten.</p>
+ * No esta permitido usar numeros negativos en la multiplicacion. Su uso inducira a un error
+ * en la aplicacion.</p>
  * <hr/>
- * <h3>M&eacutetodos que implementa:</h3>
+ * <h3>Metodos que implementa:</h3>
  * <p>
  * 	<ol>
  * 			<li><h3><em>{@link #Producto()}:</em></h3>
@@ -22,28 +22,28 @@ package com.itt.calculadora;
  * 			<li><h3><em>{@link #prodReales(double, double)}:</em></h3>
  * 				<ul>
  * 					<li>
- * 						M&eacutetodo para el producto de dos n&uacutemeros reales.
+ * 						Metodo para el producto de dos numeros reales.
  * 					</li>
  * 				</ul>
  * 			</li>
  * 			<li><h3><em>{@link #prodEnteros(int, int)}:</em></h3>
  * 				<ul>
  * 					<li>
- * 						M&eacutetodo para el producto de dos n&uacutemeros enteros.
+ * 						Metodo para el producto de dos numeros enteros.
  * 					</li>
  * 				</ul>
  * 			</li>
  * 			<li><h3><em>{@link #prodReales(double, double, double)}:</em></h3>
  * 				<ul>
  * 					<li>
- * 						M&eacutetodo para el producto de tres n&uacutemeros reales.
+ * 						Metodo para el producto de tres numeros reales.
  * 					</li>
  * 				</ul>
  * 			</li>
  * 			<li><h3><em>{@link #potencia(int, int)}:</em></h3>
  * 				<ul>
  * 					<li>
- * 						M&eacutetodo para la potencia.
+ * 						Metodo para la potencia.
  * 					</li>
  * 				</ul>
  * 			</li>	
@@ -52,7 +52,7 @@ package com.itt.calculadora;
  *<hr>
  *<h2>Casos especiales:</h2>
  *<ol>
- *	<li><p>Utilizaci&oacuten de n&uacutemeros negativos no permitidos:</p>
+ *	<li><p>Utilizacion de numeros negativos no permitidos:</p>
  * 		Si uno de los numeros pasados es negativo se imprimira un mensaje por consola
  * 		indicando que la calculadora solo realiza operaciones con numeros positivos.
  * 		Adicionalmente, el valor de retorno sera 0.
@@ -70,18 +70,18 @@ package com.itt.calculadora;
 public class Producto {
 
 	/**
-	 * Constructor por defecto que no recibe ning&uacuten par&aacutemetro.
+	 * Constructor por defecto que no recibe ningun parametro.
 	 */
 	public Producto() {
 		
 	}
 	
 	/**
-	 * <b>Producto de dos n&uacutemeros reales.</b>
+	 * <b>Producto de dos numeros reales.</b>
 	 * @param num1 Primer operando de tipo real.
 	 * @param num2 Segundo operando de tipo real.
 	 * @return Devuelve un double con el resultado de multiplicar 
-	 * los dos n&uacutemeros reales pasados al m&eacutetodo como argumentos. 
+	 * los dos numeros reales pasados al metodo como argumentos. 
 	 * Si uno de los numeros pasados es negativo se imprimira un mensaje por consola
 	 * indicando que la calculadora solo realiza operaciones con numeros positivos.
 	 * Adicionalmente, el valor de retorno sera 0.
@@ -98,11 +98,11 @@ public class Producto {
 	}
 	
 	/**
-	 * <b>Producto de dos n&uacutemeros enteros.</b>
+	 * <b>Producto de dos numeros enteros.</b>
 	 * @param num1 Primer operando de tipo entero.
 	 * @param num2 Segundo operando de tipo entero.
 	 * @return Devuelve un int con el resultado de multiplicar 
-	 * los dos n&uacutemeros enteros pasados al m&eacutetodo como argumentos. 
+	 * los dos numeros enteros pasados al metodo como argumentos. 
 	 * Si uno de los numeros pasados es negativo se imprimira un mensaje por consola
 	 * indicando que la calculadora solo realiza operaciones con numeros positivos.
 	 * Adicionalmente, el valor de retorno sera 0.
@@ -119,12 +119,12 @@ public class Producto {
 	}
 	
 	/**
-	 * <b>Producto de tres n&uacutemeros reales.</b>
+	 * <b>Producto de tres numeros reales.</b>
 	 * @param num1 Primer operando de tipo real.
 	 * @param num2 Segundo operando de tipo real.
 	 * @param num3 Tercer operando de tipo real.
 	 * @return Devuelve un double con el resultado de multiplicar 
-	 * los tres n&uacutemeros reales pasados al m&eacutetodo como argumentos. 
+	 * los tres numeros reales pasados al metodo como argumentos. 
 	 * Si uno de los numeros pasados es negativo se imprimira un mensaje por consola
 	 * indicando que la calculadora solo realiza operaciones con numeros positivos.
 	 * Adicionalmente, el valor de retorno sera 0.
@@ -142,8 +142,8 @@ public class Producto {
 	
 	/**
 	 * <b>Potencia</b>
-	 * @param base N&uacutemero entero que ser&aacute la base de la operaci&oacuten.
-	 * @param expo N&uacutemero entero que ser&aacute el exponente de la operaci&oacuten.
+	 * @param base Numero entero que sera la base de la operacion.
+	 * @param expo Numero entero que sera el exponente de la operacion.
 	 * @return Devuelve un int con el resultado de elevar al argumento
 	 * pasado como base el valor del argumento pasado como exponente.
 	 * Si uno de los numeros pasados es negativo se imprimira un mensaje por consola
@@ -154,17 +154,15 @@ public class Producto {
 	 * indicando que ambos argumentos no pueden ser igual a 0.
 	 * Adicionalmente, el valor de retorno en dicho caso sera 0.
 	 * <br>
-	 * Si los argumentos pasados provocasen un desbordamiento, se mostrara un mensaje
-	 * por consola indicando que se ha producido un desbordamiento y el valor de
-	 * retorno sera 0.
-	 * <br>
+	 * Si los argumentos pasados provocasen un desbordamiento, se indicara al usuario
+	 * el desbordamiento y se retornara 0.
 	 * <p>
 	 * <b>Casos especiales:</b>
 	 * <br>
-	 * <li>Si el primer argumento es 0 y el segundo argumento es cualquier n&uacutemero distinto de 0,
-	 * 	 el resultado ser&aacute 0.</li>
-	 * <li>Si el segundo argumento es 0, el resultado ser&aacute 1.</li>
-	 * <li>Si el segundo argumento es 1, el resultado ser&aacute igual al primer argumento.</li>
+	 * <li>Si el primer argumento es 0 y el segundo argumento es cualquier numero distinto de 0,
+	 * 	 el resultado sera 0.</li>
+	 * <li>Si el segundo argumento es 0, el resultado sera 1.</li>
+	 * <li>Si el segundo argumento es 1, el resultado sera igual al primer argumento.</li>
 	 */
 	public static int potencia(int base, int expo) {
 		int resultado = (int)(Math.pow(base, expo));
@@ -174,10 +172,13 @@ public class Producto {
 		} else if(base == 0 && expo == 0) {
 			System.out.println("Ambos argumentos (base y exponente) no pueden ser igual a 0.");
 			return 0;
+		} else if(resultado >= Integer.MAX_VALUE || resultado < 0) {
+			System.out.println("Se ha producido un desbordamiento.");
+			return 0;
 		} else {
 			return resultado;	
 		}
 	}
 	
-
+	
 }

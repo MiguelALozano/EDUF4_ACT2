@@ -1,6 +1,8 @@
 /**
  * Para poder usar las clases tenemos que importar el paquete com.itt.calculadora.
  */
+import java.text.DecimalFormat;
+
 import com.itt.calculadora.*;
 
 /**
@@ -18,8 +20,30 @@ public class Principal {
 		
 		
 		// Zona para División
+		double num1 = 124.544544;
+		double num2 = 2;
+		int numEntero1 = 2;
+		int numEntero2 = 6;
+		DecimalFormat df = new DecimalFormat("#0.00");
+//		DecimalFormat inv = new DecimalFormat("#.00000");
 		
+		System.out.println("\n***************** DIVISION *****************");		
+		System.out.println("Metodo para dividir 2 numeros reales:");
+		System.out.println(num1 + " / " + num2 + " = " + df.format(Division.divReales(num1, num2)));
+		System.out.println("=======================");
+		System.out.println("Metodo para dividir dos numeros enteros:");
+		System.out.println(numEntero1 + " / " + numEntero2 + " = " + df.format(Division.divEnteros(numEntero1, numEntero2)));
+		System.out.println("=======================");
+		System.out.println("Metodo para calcular el inverso de un numero:");
+		System.out.println("El inverso de " + num2 + " = " + df.format(Division.inverso(num2)));
+		System.out.println("=======================");
+		System.out.println("Metodo para calcular la raiz cuadrada de un numero:");
+		System.out.println("La raiz cuadrada de " + num2 + " = " + df.format(Division.raiz(num2)));
+				
+		System.out.println("\n\n\n");
+
 		// Zona para Producto
+		System.out.println("\n***************** PRODUCTO *****************");		
 		System.out.println("Operacion valida de 2 numeros reales:");
 		System.out.println("4.5 x 2 = " + Producto.prodReales(4.5, 2));
 		System.out.println("=======================");
@@ -44,10 +68,12 @@ public class Principal {
 		System.out.println("Operacion no valida de potencia:");
 		System.out.println("0^0 = " + Producto.potencia(0, 0));
 		System.out.println("=======================");
-		
+		System.out.println("Ejemplo de desbordamiento:");
+		System.out.println("1000^1000 = " + Producto.potencia(1000, 1000));
+		System.out.println("=======================");
 		
 		// Zona para Resta
-		System.out.println("***************** RESTA *****************");
+		System.out.println("\n***************** RESTA *****************");
 		System.out.println("Operacion valida de 2 numeros reales:");
 		System.out.println("4.5 - 2 = " + Resta.resReales(4.5, 2));
 		//guardo el valor de la resta anterior para llevar un acumulado de resultados
@@ -74,6 +100,17 @@ public class Principal {
 		System.out.println("=======================");
 		System.out.println("Valor acumulado de las restas: " +Resta.getAcum());
 		System.out.println("=======================");
+<<<<<<< HEAD
+
+		// Zona para Suma
+		System.out.println("\n***************** SUMA *****************");		
+		//Suma de dos reales:
+		double a = 8.75;
+		double b = 11.87;
+		double c = 8.45;
+		double d = -11.75;
+=======
+>>>>>>> jass
 		
 		// Zona para Suma
 		System.out.println("***************** SUMA *****************");
