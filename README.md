@@ -1,4 +1,4 @@
-#ACTIVIDAD 2 UF4
+# ACTIVIDAD 2 UF4
 
 - Tomando como base la actividad anterior, procedemos a implementar el 
   cógido en cada una de las clases:
