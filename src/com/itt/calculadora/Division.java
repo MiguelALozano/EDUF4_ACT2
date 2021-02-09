@@ -7,7 +7,7 @@ package com.itt.calculadora;
  * &nbsp&nbsp- division de dos numeos enteros <br>
  * &nbsp&nbsp- inverso de un numero real<br>
  * &nbsp&nbsp- raiz de un numero<br>
- * No est&aacute permitido usar numeros negativos en la division. Su uso inducira a un error
+ * No esta permitido usar numeros negativos en la division. Su uso inducira a un error
  * en la aplicacion</p>
  * <hr/>
  * <h3>Metodos que implementa:</h3>
@@ -34,7 +34,7 @@ package com.itt.calculadora;
  * 					</li>
  * 				</ul>
  * 			</li>
- * 			<li><h3><em>{@link #inverso(int)}:</em></h3>
+ * 			<li><h3><em>{@link #inverso(double)}:</em></h3>
  * 				<ul>
  * 					<li>
  * 						Metodo para calcular el inverso de un numero.

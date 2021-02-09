@@ -7,7 +7,7 @@ import com.itt.calculadora.*;
 
 /**
  * Clase principal donde se ponen a prueba los metodos creados de las clases<br>
- * Divisi&oacuten, Producto, Reesta y Suma.
+ * Division, Producto, Reesta y Suma.
  * 
  * @author Jose A. Santos, Alvaro Quiles, Miguel A. Lozano, Raul Ruiz
  * @version 1.1
@@ -19,13 +19,13 @@ public class Principal {
 	public static void main(String[] args) {
 		
 		
-		// Zona para División
+		// Zona para Division
 		double num1 = 124.544544;
 		double num2 = 2;
 		int numEntero1 = 2;
 		int numEntero2 = 6;
 		DecimalFormat df = new DecimalFormat("#0.00");
-//		DecimalFormat inv = new DecimalFormat("#.00000");
+		//DecimalFormat inv = new DecimalFormat("#.00000");
 		
 		System.out.println("\n***************** DIVISION *****************");		
 		System.out.println("Metodo para dividir 2 numeros reales:");
@@ -105,7 +105,7 @@ public class Principal {
 		System.out.println("***************** SUMA *****************");
 		System.out.println("Operacion valida de 2 numeros reales:");
 		System.out.println("8.75 + 11.87 = " + Suma.sumReales(8.75, 11.87));
-		//guardo el valor de la resta anterior para llevar un acumulado de resultados
+		//guardo el valor de la suma anterior para llevar un acumulado de resultados
 		Suma.sumAcumulado(Suma.sumReales(8.75, 11.87)); 
 		System.out.println("=======================");
 		System.out.println("Operacion no valida de 2 numeros reales:");
@@ -113,7 +113,7 @@ public class Principal {
 		System.out.println("=======================");
 		System.out.println("Operacion valida de 2 numeros enteros:");
 		System.out.println("20 + 4 = " + Suma.sumEntero(20, 4));
-		//guardo el valor de la resta anterior para llevar un acumulado de resultados
+		//guardo el valor de la suma anterior para llevar un acumulado de resultados
 		Suma.sumAcumulado(Suma.sumEntero(20, 4));
 		System.out.println("=======================");
 		System.out.println("Operacion no valida de 2 numeros enteros:");
@@ -121,7 +121,7 @@ public class Principal {
 		System.out.println("=======================");
 		System.out.println("Operacion valida de 3 numeros reales:");
 		System.out.println("8.75 + 11.87 + 8.45 = " + Suma.sumTresReales(8.75, 11.87, 8.45));
-		//guardo el valor de la resta anterior para llevar un acumulado de resultados
+		//guardo el valor de la suma anterior para llevar un acumulado de resultados
 		Suma.sumAcumulado(Suma.sumTresReales(8.75, 11.87, 8.45));
 		System.out.println("=======================");
 		System.out.println("Operacion no valida de 3 numeros reales:");
