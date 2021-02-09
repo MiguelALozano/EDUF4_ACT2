@@ -101,6 +101,7 @@ public class Principal {
 		System.out.println("=======================");
 		System.out.println("Valor acumulado de las restas: " +Resta.getAcum());
 		System.out.println("=======================");
+<<<<<<< HEAD
 
 		// Zona para Suma
 		System.out.println("\n***************** SUMA *****************");		
@@ -109,36 +110,37 @@ public class Principal {
 		double b = 11.87;
 		double c = 8.45;
 		double d = -11.75;
+=======
+>>>>>>> jass
 		
-		result = Suma.sumReales(a, b);
-		System.out.printf("La suma de a y b = %.2f", result);
-		System.out.println();
-		result = Suma.sumEntero((int)a,(int)b);
-		System.out.printf("La suma de a y b = %.0f", result);
-		result = Suma.sumTresReales(a, b, c);
-		System.out.println();
-		System.out.printf("La suma de a, b y c = %.2f", result);
-		result = Suma.sumTresReales(a, b, d);
-		System.out.println();
-		System.out.printf("La suma de a, b y d = %.2f", result);
-		System.out.println();
-		System.out.println("Esto es una suma acumulada: ");
-		Suma.sumAcumulado(a);
-		result = Suma.getAcum();
-		System.out.printf("El acumulado es: %.2f", result);
-		System.out.println();
-		Suma.sumAcumulado(b);
-		result = Suma.getAcum();
-		System.out.printf("El acumulado es: %.2f", result);
-		System.out.println();
-		Suma.sumAcumulado(d);
-		result = Suma.getAcum();
-		System.out.printf("El acumulado es: %.2f", result);
-		System.out.println();
-		Suma.sumAcumulado(c);
-		result = Suma.getAcum();
-		System.out.printf("El acumulado es: %.2f", result);
-	
+		// Zona para Suma
+		System.out.println("***************** SUMA *****************");
+		System.out.println("Operacion valida de 2 numeros reales:");
+		System.out.println("8.75 + 11.87 = " + Suma.sumReales(8.75, 11.87));
+		//guardo el valor de la resta anterior para llevar un acumulado de resultados
+		Suma.sumAcumulado(Suma.sumReales(8.75, 11.87)); 
+		System.out.println("=======================");
+		System.out.println("Operacion no valida de 2 numeros reales:");
+		System.out.println("8.45 + (-11.75) = " + Suma.sumReales(8.45, -11.75));
+		System.out.println("=======================");
+		System.out.println("Operacion valida de 2 numeros enteros:");
+		System.out.println("20 + 4 = " + Suma.sumEntero(20, 4));
+		//guardo el valor de la resta anterior para llevar un acumulado de resultados
+		Suma.sumAcumulado(Suma.sumEntero(20, 4));
+		System.out.println("=======================");
+		System.out.println("Operacion no valida de 2 numeros enteros:");
+		System.out.println("20 + (-4) = " + Suma.sumEntero(20, -4)); 
+		System.out.println("=======================");
+		System.out.println("Operacion valida de 3 numeros reales:");
+		System.out.println("8.75 + 11.87 + 8.45 = " + Suma.sumTresReales(8.75, 11.87, 8.45));
+		//guardo el valor de la resta anterior para llevar un acumulado de resultados
+		Suma.sumAcumulado(Suma.sumTresReales(8.75, 11.87, 8.45));
+		System.out.println("=======================");
+		System.out.println("Operacion no valida de 3 numeros reales:");
+		System.out.println("4.3 + (-7.2) + 2 = " + Suma.sumTresReales(4.3, -7.2, 2));
+		System.out.println("=======================");
+		System.out.println("Valor acumulado de las sumas: " +Suma.getAcum());
+		System.out.println("=======================");
 		
 		
 	}
