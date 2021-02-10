@@ -153,7 +153,7 @@ public class Division {
 			System.out.println("La calculadora solo admite numeros positivos.");
 			return 0.00;
 		} else if (num == 0){
-			System.out.println("El divisor no puede ser 0");
+			System.out.println("El numero no puede ser 0");
 			return 0.00;
 		} else {
 			return (Math.sqrt(num));
