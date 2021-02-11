@@ -24,6 +24,9 @@ public class Principal {
 		double neg = -5.00;
 		int numEntero1 = 2;
 		int numEntero2 = 6;
+		int numEntero3 = 0;
+		int numEntero4 = -4;
+		int numDesb = 1000;
 
 		DecimalFormat df = new DecimalFormat("#0.00");
 		
@@ -49,28 +52,28 @@ public class Principal {
 		System.out.println(num1 + " x " + num2 + " = " + Producto.prodReales(num1, num2));
 		System.out.println("=======================");
 		System.out.println("Operacion no valida de 2 numeros reales:");
-		System.out.println(Producto.prodReales(num1, num2));
+		System.out.println(num1 + " x " + neg + " = " + Producto.prodReales(num1, neg));
 		System.out.println("=======================");
 		System.out.println("Operacion valida de 2 numeros enteros:");
-		System.out.println(num1 + " x " + num2 + " = " + Producto.prodEnteros(20, 4));
+		System.out.println(numEntero1 + " x " + numEntero2 + " = " + Producto.prodEnteros(numEntero1, numEntero2));
 		System.out.println("=======================");
 		System.out.println("Operacion no valida de 2 numeros enteros:");
-		System.out.println(Producto.prodEnteros(20, -4));
+		System.out.println(numEntero1 + " x " + numEntero4 + " = " + Producto.prodEnteros(numEntero1, numEntero4));
 		System.out.println("=======================");
 		System.out.println("Operacion valida de 3 numeros reales:");
-		System.out.println("4.3 * 7.2 * 2 = " + Producto.prodReales(4.3, 7.2, 2));
+		System.out.println(num1 + " x " + num2 + " x " + num3 + " = " + Producto.prodReales(num1, num2, num3));
 		System.out.println("=======================");
 		System.out.println("Operacion no valida de 3 numeros reales:");
-		System.out.println(Producto.prodReales(4.3, -7.2, 2));
+		System.out.println(num1 + " x " + num2 + " x " + neg + " = " + Producto.prodReales(num1, num2, neg));
 		System.out.println("=======================");
 		System.out.println("Operacion valida de potencia:");
-		System.out.println("4^7 = " + Producto.potencia(4, 7));
+		System.out.println(numEntero1 + "^" + numEntero2 + " = " + Producto.potencia(numEntero1, numEntero2));
 		System.out.println("=======================");
 		System.out.println("Operacion no valida de potencia:");
-		System.out.println("0^0 = " + Producto.potencia(0, 0));
+		System.out.println(numEntero3 + "^" + numEntero3 + " = " + Producto.potencia(numEntero3, numEntero3));
 		System.out.println("=======================");
 		System.out.println("Ejemplo de desbordamiento:");
-		System.out.println("1000^1000 = " + Producto.potencia(1000, 1000));
+		System.out.println(numDesb + "^" + numDesb + " = " + Producto.potencia(numDesb, numDesb));
 		System.out.println("=======================");
 
 		System.out.println("\n\n");
