@@ -19,11 +19,11 @@ public class Principal {
 	public static void main(String[] args) {
 		
 		double num1 = 124.544544;
-		double num2 = 0;
+		double num2 = 7.45;
 		double num3 = 4.23;
+		double neg = -5.00;
 		int numEntero1 = 2;
 		int numEntero2 = 6;
-		int numEntero = 20;
 
 		DecimalFormat df = new DecimalFormat("#0.00");
 		
@@ -109,30 +109,30 @@ public class Principal {
 		// Zona para Suma	
 		System.out.println("***************** SUMA *****************");
 		System.out.println("Operacion valida de 2 numeros reales:");
-		System.out.println("8.75 + 11.87 = " + Suma.sumReales(8.75, 11.87));
+		System.out.println(num1 + " + " + num2 + " = " + df.format(Suma.sumReales(num1, num2)));
 		//guardo el valor de la suma anterior para llevar un acumulado de resultados
-		Suma.sumAcumulado(Suma.sumReales(8.75, 11.87)); 
+		Suma.sumAcumulado(Suma.sumReales(num1, num2)); 
 		System.out.println("=======================");
 		System.out.println("Operacion no valida de 2 numeros reales:");
-		System.out.println("8.45 + (-11.75) = " + Suma.sumReales(8.45, -11.75));
+		System.out.println(num1 + " + " + neg + " = " + df.format(Suma.sumReales(num1, neg)));
 		System.out.println("=======================");
 		System.out.println("Operacion valida de 2 numeros enteros:");
-		System.out.println("20 + 4 = " + Suma.sumEntero(20, 4));
+		System.out.println(numEntero1 + " + " + numEntero2 + " = " + Suma.sumEntero(numEntero1, numEntero2));
 		//guardo el valor de la suma anterior para llevar un acumulado de resultados
-		Suma.sumAcumulado(Suma.sumEntero(20, 4));
+		Suma.sumAcumulado(Suma.sumEntero(numEntero1, numEntero2));
 		System.out.println("=======================");
 		System.out.println("Operacion no valida de 2 numeros enteros:");
-		System.out.println("20 + (-4) = " + Suma.sumEntero(20, -4)); 
+		System.out.println(numEntero2 + " + " + (int)neg + " = " + Suma.sumEntero(numEntero2, (int)neg )); 
 		System.out.println("=======================");
 		System.out.println("Operacion valida de 3 numeros reales:");
-		System.out.println("8.75 + 11.87 + 8.45 = " + Suma.sumTresReales(8.75, 11.87, 8.45));
+		System.out.println(num1 + " + " + num2 + num3 + " = " +df.format(Suma.sumTresReales(num1, num2, num3)));
 		//guardo el valor de la suma anterior para llevar un acumulado de resultados
-		Suma.sumAcumulado(Suma.sumTresReales(8.75, 11.87, 8.45));
+		Suma.sumAcumulado(Suma.sumTresReales(num1, num2, num3));
 		System.out.println("=======================");
 		System.out.println("Operacion no valida de 3 numeros reales:");
-		System.out.println("4.3 + (-7.2) + 2 = " + Suma.sumTresReales(4.3, -7.2, 2));
+		System.out.println(num1 + " + " + neg + num3 + " = " + df.format(Suma.sumTresReales(num1, neg, num3)));
 		System.out.println("=======================");
-		System.out.println("Valor acumulado de las sumas: " +Suma.getAcum());
+		System.out.println("Valor acumulado de las sumas: " + df.format(Suma.getAcum()));
 		System.out.println("=======================");
 	}
 
